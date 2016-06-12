@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+                            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+                            http://www.springframework.org/schema/tx  http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+
+
+    <context:property-placeholder location="classpath:hibernate.properties, classpath:app.properties,
+     classpath:hibernate-test.properties, classpath:datasource-test.properties" />
+    <import resource="database-context.xml"/>
+
+    <!--Overriding the regular datasource with in-memory datasource implementation for unit testing DAO layer-->
+  <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+    <property name="driverClassName" value="${test.driverClassName}" />
+    <property name="url" value="${test.url}" />
+    <property name="username" value="${test.username}" />
+    <property name="password" value="${test.password}" />
+  </bean>
+
+    <!--Overriding the regular hibernate properties for unit testing DAO layer-->
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="packagesToScan" value="com.softserve.creditloan.model" />
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">${test.hibernate.dialect}</prop>
+                <prop key="hibernate.hbm2ddl.auto">${test.hibernate.hbm2ddl.auto}</prop>
+                <prop key="hibernate.default_schema">${test.hibernate.default_schema}</prop>
+            </props>
+        </property>
+    </bean>
+</beans>

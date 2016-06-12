@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - credit-loan@localhost" uuid="f9e76080-dd35-4b5b-8c2b-ebc70cae6abd">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>credit-loan.*</schema-pattern>
+      <default-schemas>credit-loan.*</default-schemas>
+    </data-source>
+  </component>
+</project>
