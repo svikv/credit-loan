@@ -82,10 +82,10 @@ public class PaymentControllerTest {
 
         String expected = "table";
         when(paymentService.loadAllPayments(ID)).thenReturn(new ArrayList<Payment>());
-        assertEquals(paymentController.showPayments(ID, ONCE, model), expected);
+        assertEquals(paymentController.paymentList(ID, ONCE, model), expected);
 
         expected = "graphic";
-        assertEquals(paymentController.showPayments(ID, TWICE, model), expected);
+        assertEquals(paymentController.paymentList(ID, TWICE, model), expected);
         verify(paymentService, atLeast(ONCE)).loadAllPayments(ID);
     }
 }

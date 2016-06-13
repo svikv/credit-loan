@@ -286,7 +286,7 @@ public class CreditLineControllerTest {
 
         String expected = "creditLine/list";
         when(creditLineService.loadAllCreditLines(ID)).thenReturn(new ArrayList<CreditLine>());
-        assertEquals(creditLineController.getCreditLinesList(ID, model), expected);
+        assertEquals(creditLineController.creditLineList(ID, model), expected);
         verify(creditLineService, times(ONCE)).loadAllCreditLines(ID);
     }
 

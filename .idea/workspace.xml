@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872d28af-3be4-41f4-a3e2-198f5c8e859a" name="Default" comment="revised pom.xml">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/credit-loan.war" afterPath="$PROJECT_DIR$/target/credit-loan.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/softserve/creditloan/controller/ClientController.java" afterPath="$PROJECT_DIR$/src/main/java/com/softserve/creditloan/controller/ClientController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/softserve/creditloan/controller/CreditLineController.java" afterPath="$PROJECT_DIR$/src/main/java/com/softserve/creditloan/controller/CreditLineController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/softserve/creditloan/controller/PaymentController.java" afterPath="$PROJECT_DIR$/src/main/java/com/softserve/creditloan/controller/PaymentController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/softserve/creditloan/service/PaymentService.java" afterPath="$PROJECT_DIR$/src/main/java/com/softserve/creditloan/service/PaymentService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/softserve/creditloan/controller/CreditLineControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/softserve/creditloan/controller/CreditLineControllerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/softserve/creditloan/controller/PaymentControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/softserve/creditloan/controller/PaymentControllerTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webtester-app.log" afterPath="$PROJECT_DIR$/webtester-app.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -68,18 +65,71 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/creditloan/controller/PaymentController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+              <caret line="38" column="29" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PaymentService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PaymentService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/creditloan/service/PaymentService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4247191">
+            <state vertical-scroll-proportion="0.0">
               <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="root-context.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/root-context.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.3333335">
+              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PaymentControllerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/creditloan/controller/PaymentControllerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="80" column="36" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreditLineControllerTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/creditloan/controller/CreditLineControllerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="5.216216">
+              <caret line="288" column="57" selection-start-line="288" selection-start-column="57" selection-end-line="288" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="security-context.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/security-context.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1465502553750" expanded="true" signature="1881:1946" placeholder="SELECT id, p..User..." />
+                <marker date="1465502553750" expanded="true" signature="2014:2052" placeholder="SELECT id, r..User..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,8 +173,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/softserve/creditloan/service/CreditLineServiceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/softserve/creditloan/service/PaymentServiceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/softserve/creditloan/controller/ClientControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/softserve/creditloan/controller/PaymentControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/softserve/creditloan/controller/CreditLineControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/softserve/creditloan/validator/UsernameUniqueValidator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/softserve/creditloan/controller/LoginLogoutController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/database-context-test.xml" />
@@ -137,7 +185,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/tiles-template/menu.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/database-context.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/root-context.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/softserve/creditloan/dao/ClientDAO.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/softserve/creditloan/service/ClientServiceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/softserve/creditloan/dao/ClientDAOImplTest.java" />
@@ -160,6 +207,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/softserve/creditloan/service/PaymentService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/softserve/creditloan/controller/ClientController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/softserve/creditloan/controller/CreditLineController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/root-context.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/softserve/creditloan/controller/PaymentControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/softserve/creditloan/controller/CreditLineControllerTest.java" />
       </list>
     </option>
   </component>
@@ -752,7 +802,7 @@
       <recent name="com.softserve.creditloan.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.com.softserve.creditloan.dao in credit-loan">
+  <component name="RunManager" selected="Tomcat Server.Tomcat">
     <configuration default="false" name="com.softserve.creditloan.controller in credit-loan" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1375,25 +1425,27 @@
       <workItem from="1465750371848" duration="49000" />
       <workItem from="1465750892963" duration="2182000" />
       <workItem from="1465800097518" duration="1565000" />
-      <workItem from="1465804235176" duration="3799000" />
+      <workItem from="1465804235176" duration="4607000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="540945000" />
+    <option name="totallyTimeSpent" value="541753000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19389978" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27450982" sideWeight="0.50238097" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11764706" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24400872" sideWeight="0.49761903" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.04793028" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1405,14 +1457,12 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39978212" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39978212" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19389978" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39978212" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24400872" sideWeight="0.49761903" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13725491" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1438,13 +1488,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/payment/graphic.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.740741">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/dist/css/multi-select.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1494,14 +1537,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/database-context.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.66743916">
@@ -1516,14 +1551,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6876404">
           <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/root-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39037433">
-          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
           <folding />
         </state>
       </provider>
@@ -1588,21 +1615,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20224719">
           <caret line="10" column="83" selection-start-line="10" selection-start-column="83" selection-end-line="10" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/creditloan/controller/CreditLineControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6076294">
-          <caret line="308" column="9" selection-start-line="308" selection-start-column="9" selection-end-line="308" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/security-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1812,18 +1824,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/creditloan/controller/PaymentController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/creditloan/service/PaymentService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+          <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/creditloan/service/PaymentService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/security-context.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4247191">
-          <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1465502553750" expanded="true" signature="1881:1946" placeholder="SELECT id, p..User..." />
+            <marker date="1465502553750" expanded="true" signature="2014:2052" placeholder="SELECT id, r..User..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/root-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.3333335">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/softserve/creditloan/controller/PaymentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="29" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/creditloan/controller/PaymentControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="80" column="36" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/softserve/creditloan/controller/CreditLineControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="5.216216">
+          <caret line="288" column="57" selection-start-line="288" selection-start-column="57" selection-end-line="288" selection-end-column="57" />
           <folding />
         </state>
       </provider>
