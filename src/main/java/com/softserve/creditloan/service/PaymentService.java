@@ -30,7 +30,7 @@ public class PaymentService {
     private CreditLineDAO creditLineDAO;
 
     /**
-     * Invokes different methods for calculating, generating and saving Payment instance depending on the payment type(classical or annuity)
+     * Calculates, generates and saves payment by delegating the processing to the cauntClassicalPayment/cauntAnnuityPayment methods depending on the payment type
      */
     public void countPayments(int creditLineId){
 
@@ -44,7 +44,7 @@ public class PaymentService {
     }
 
     /**
-     * Calculates, generates and saves Payment instance to the database in case of classical payment type
+     * Calculates, generates and saves payment to the database in case of classical payment type
      * @param creditLine for which enclosed Payment instance to be generated and saved
      */
     public void cauntClassicalPayment(CreditLine creditLine){
@@ -64,7 +64,7 @@ public class PaymentService {
     }
 
     /**
-     * Calculates, generates and saves Payment instance to the database in case of annuity payment type
+     * Calculates, generates and saves payment to the database in case of annuity payment type
      * @param creditLine for which enclosed Payment instance to be generated and saved
      */
     public void cauntAnnuityPayment(CreditLine creditLine){

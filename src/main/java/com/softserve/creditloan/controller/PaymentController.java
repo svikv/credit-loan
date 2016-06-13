@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.List;
 
 /**
- * PaymentController class represents {@code Payment} MVC Controller. Handles and retrieves Payment pages depending on the URI template
+ * Handles and retrieves payment request
  * @author Viktor Somka
  */
 
@@ -29,14 +29,14 @@ public class PaymentController {
     private PaymentService paymentService;
 
     /**
-     * Retrieves page with existing Payment instance
-     * @param id identifies {@link CreditLine} instance which dependencies {@link Payment} to be loaded
+     * Handles and retrieves all payments and shows it in a JSP page
+     * @param id identifies {@link CreditLine} instance which enclosed instances {@link Payment} to be loaded
      * @param viewType determines name of view
      * @param model {@link Model} object
-     * @return name of view
+     * @return the name of view
      */
     @RequestMapping(value = "/get/{id}", method = RequestMethod.GET)
-    public String showPayments(@PathVariable(value = "id") int id, @RequestParam("viewType") int viewType, Model model) {
+    public String paymentList(@PathVariable(value = "id") int id, @RequestParam("viewType") int viewType, Model model) {
 
         List<Payment> payments = paymentService.loadAllPayments(id);
         if (!CollectionUtils.isNotEmpty(payments)) {

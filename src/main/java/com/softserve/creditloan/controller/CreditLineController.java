@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import java.util.List;
 
 /**
- * CreditLineController class represents {@code CreditLine} MVC Controller. Handles and retrieves CreditLine pages depending on the URI template
+ * Handles and retrieves creditLine request
  * @author Viktor Somka
  */
 
@@ -35,13 +35,13 @@ public class CreditLineController {
     private CreditLineService creditLineService;
 
     /**
-     * Retrieves page with existing CreditLine instance
-     * @param id identifies {@link Client} instance which dependencies {@link CreditLine} to be loaded
+     * Handles and retrieves all creditLines and shows it in a JSP page
+     * @param id identifies {@link Client} instance which enclosed instances {@link CreditLine} to be loaded
      * @param model {@link Model} object
-     * @return name of view
+     * @return the name of view
      */
     @RequestMapping(value = "/get/{id}", method = RequestMethod.GET)
-    public String getCreditLinesList(@PathVariable(value = "id") int id, Model model) {
+    public String creditLineList(@PathVariable(value = "id") int id, Model model) {
 
         List<CreditLine> creditLines = creditLineService.loadAllCreditLines(id);
         model.addAttribute(CLIENT_ID, id);
@@ -50,10 +50,10 @@ public class CreditLineController {
     }
 
     /**
-     * Retrieves new CreditLine creation page.
-     * @param id identifies {@link Client} instance which dependencies {@link CreditLine} to be loaded
-     * @param model container with CreditLine object
-     * @return name of view
+     * Retrieves new CreditLine creation page
+     * @param id identifies {@link Client} instance which enclosed instances {@link CreditLine} to be saved
+     * @param model {@link Model} object
+     * @return the name of view
      */
     @RequestMapping(value = "/create/{id}", method = RequestMethod.GET)
     public String getCreditLine(@PathVariable int id, Model model) {
@@ -74,12 +74,12 @@ public class CreditLineController {
     }
 
     /**
-     * Handles creating new CreditLine instance
-     * @param creditLine {@link CreditLine} instance to be saved
+     * Saves a new creditLine by delegating the processing to CreditLineService
+     * @param creditLine {@link CreditLine} has been passed to the controller from the JSP
      * @param result {@link BindingResult} validation handle object
-     * @param id identifies {@link Client} instance which dependencies {@link CreditLine} to be loaded
+     * @param id identifies {@link Client} instance which enclosed instances {@link CreditLine} to be saved
      * @param model {@link Model} object
-     * @return name of view
+     * @return the name of view
      */
     @RequestMapping(value = "/create/{id}", method = RequestMethod.POST)
     public String saveCreditLine(@Validated @ModelAttribute("creditLine") CreditLine creditLine, BindingResult result, @PathVariable int id, Model model) {

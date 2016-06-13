@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * ClientController class represents {@code Client} MVC Controller. Handles and retrieves Client pages depending on the URI template
+ * Handles and retrieves client request
  * @author Viktor Somka
  */
 
@@ -38,9 +38,9 @@ public class ClientController {
     }
 
     /**
-     * Retrieves page with existing Client instances
+     * Handles and retrieves all clients and shows it in a JSP page
      * @param model {@link Model} object
-     * @return name of view
+     * @return the name of view
      */
     @RequestMapping(method = RequestMethod.GET)
     public String clientList(Model model) {
@@ -51,10 +51,10 @@ public class ClientController {
     }
 
     /**
-     * Retrieves Client modify page
-     * @param id identifier of modifying {@link Client} instance
+     * Retrieves the client modify page
+     * @param id identifies client to be edited
      * @param model {@link Model} object
-     * @return name of view
+     * @return the name of view
      */
     @RequestMapping(value = "/modify/{id}", method = RequestMethod.GET)
     public String getClient(@PathVariable(value = "id") int id, Model model) {
@@ -66,9 +66,9 @@ public class ClientController {
     }
 
     /**
-     * Retrieves new Client creation page
+     * Retrieves the client creation page
      * @param model {@link Model} object
-     * @return name of view
+     * @return the name of view
      */
     @RequestMapping(value = "/create", method = RequestMethod.GET)
     public String createClient(Model model) {
@@ -79,11 +79,11 @@ public class ClientController {
     }
 
     /**
-     * Handles creating new Client instance
-     * @param client {@link Client} instance to be saved
+     * Saves a new client by delegating the processing to ClientService
+     * @param client {@link Client}  has been passed to the controller from the JSP
      * @param result {@link BindingResult} validation handle object
      * @param model {@link Model} object
-     * @return name of view
+     * @return the name of view
      */
     @RequestMapping(value = "/create", method = RequestMethod.POST)
     public String saveCreatedClient(@Validated @ModelAttribute("client") Client client, BindingResult result, Model model) {
@@ -98,11 +98,11 @@ public class ClientController {
     }
 
     /**
-     * Handles modifying an existing Client instance
-     * @param client {@link Client} instance to be saved
+     * Edits an existing client by delegating the processing to ClientService
+     * @param client {@link Client} has been passed to the controller from the JSP
      * @param result {@link BindingResult} validation handle object
      * @param model {@link Model} object
-     * @return Client main page if success, in case of validation errors returns to modifying page
+     * @return the client main page if success, in case of validation errors returns to modify page
      */
     @RequestMapping(value = "/modify/{id}", method = RequestMethod.POST)
     public String saveUpdatedClient(@Validated @ModelAttribute("client") Client client, BindingResult result, Model model) {
@@ -117,9 +117,9 @@ public class ClientController {
     }
 
     /**
-     * Retrieves Client deleting page
-     * @param id identifies {@link Client} instance to be deleted
-     * @return if success, redirects to Client main page
+     * Deletes an existing client by delegating the processing to ClientService
+     * @param id identifies client to be deleted
+     * @return if success, redirects to the client main page
      */
     @RequestMapping(value = "/delete/{id}", method = RequestMethod.GET)
     public String deleteClient(@PathVariable(value = "id") int id) {
