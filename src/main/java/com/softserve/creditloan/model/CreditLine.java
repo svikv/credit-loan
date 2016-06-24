@@ -3,8 +3,13 @@ package com.softserve.creditloan.model;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.hibernate.annotations.*;
+import org.hibernate.annotations.Cache;
 
 import javax.persistence.*;
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import javax.validation.constraints.Min;
 import java.io.Serializable;
 import java.util.List;
@@ -15,6 +20,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "creditline")
+@Cache(usage = CacheConcurrencyStrategy.READ_WRITE, region = "creditLine")
 public class CreditLine implements Serializable {
 
     private static final long serialVersionUID = -8767854358586703631L;

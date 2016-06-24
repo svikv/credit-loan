@@ -4,8 +4,12 @@ import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
+import org.hibernate.annotations.*;
+import org.hibernate.annotations.Cache;
 
 import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.io.Serializable;
 
 /**
@@ -14,6 +18,7 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "payment")
+@Cache(usage = CacheConcurrencyStrategy.READ_WRITE, region = "creditLine")
 public class Payment implements Serializable {
 
     private static final long serialVersionUID = -4609449949072647059L;
