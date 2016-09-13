@@ -8982,3 +8982,319 @@ Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: P
 01:35:18,048  INFO main TransactionContext:endTransaction:136 - Rolled back transaction for test context [DefaultTestContext@5034f5dd testClass = PaymentDAOImplTest, testInstance = com.softserve.creditloan.dao.PaymentDAOImplTest@3811510, testMethod = loadAllPaymentsTest@PaymentDAOImplTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@7cfb4736 testClass = PaymentDAOImplTest, locations = '{file:src/main/webapp/WEB-INF/database-context-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
 01:35:18,090  INFO Thread-3 GenericApplicationContext:doClose:960 - Closing org.springframework.context.support.GenericApplicationContext@654f0d9c: startup date [Sat Jun 25 01:35:13 EEST 2016]; root of context hierarchy
 01:35:18,228  INFO Thread-3 SchemaDropperImpl$DelayedDropActionImpl:perform:523 - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+19:17:51,231  INFO main DefaultTestContextBootstrapper:getDefaultTestExecutionListenerClassNames:259 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+19:17:51,318  INFO main DefaultTestContextBootstrapper:getTestExecutionListeners:185 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4493d195, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2781e022, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@57e1b0c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4232c52b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1877ab81, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@305fd85d]
+19:17:51,326  INFO main DefaultTestContextBootstrapper:getDefaultTestExecutionListenerClassNames:259 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+19:17:51,328  INFO main DefaultTestContextBootstrapper:getTestExecutionListeners:185 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@33c7e1bb, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@34c4973, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@52feb982, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7a765367, org.springframework.test.context.transaction.TransactionalTestExecutionListener@76b0bfab, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@17d677df]
+19:17:51,336  INFO main DefaultTestContextBootstrapper:getDefaultTestExecutionListenerClassNames:259 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+19:17:51,337  INFO main DefaultTestContextBootstrapper:getTestExecutionListeners:185 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7d70d1b1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2a742aa2, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3cb1ffe6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3dfc5fb8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@467aecef, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4d50efb8]
+19:17:52,849  INFO main XmlBeanDefinitionReader:loadBeanDefinitions:317 - Loading XML bean definitions from URL [file:src/main/webapp/WEB-INF/database-context-test.xml]
+19:17:53,181  INFO main XmlBeanDefinitionReader:loadBeanDefinitions:317 - Loading XML bean definitions from URL [file:src/main/webapp/WEB-INF/database-context.xml]
+19:17:53,715  INFO main DefaultListableBeanFactory:registerBeanDefinition:839 - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Generic bean: class [org.apache.commons.dbcp.BasicDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=close; defined in URL [file:src/main/webapp/WEB-INF/database-context.xml]] with [Generic bean: class [org.apache.commons.dbcp.BasicDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=close; defined in URL [file:src/main/webapp/WEB-INF/database-context-test.xml]]
+19:17:53,718  INFO main DefaultListableBeanFactory:registerBeanDefinition:839 - Overriding bean definition for bean 'sessionFactory' with a different definition: replacing [Generic bean: class [org.springframework.orm.hibernate5.LocalSessionFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [file:src/main/webapp/WEB-INF/database-context.xml]] with [Generic bean: class [org.springframework.orm.hibernate5.LocalSessionFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [file:src/main/webapp/WEB-INF/database-context-test.xml]]
+19:17:53,725  INFO main GenericApplicationContext:prepareRefresh:578 - Refreshing org.springframework.context.support.GenericApplicationContext@67a20f67: startup date [Tue Sep 13 19:17:53 EEST 2016]; root of context hierarchy
+19:17:53,984  INFO main PropertySourcesPlaceholderConfigurer:loadProperties:172 - Loading properties file from class path resource [hibernate.properties]
+19:17:53,986  INFO main PropertySourcesPlaceholderConfigurer:loadProperties:172 - Loading properties file from class path resource [app.properties]
+19:17:53,987  INFO main PropertySourcesPlaceholderConfigurer:loadProperties:172 - Loading properties file from class path resource [hibernate-test.properties]
+19:17:53,989  INFO main PropertySourcesPlaceholderConfigurer:loadProperties:172 - Loading properties file from class path resource [datasource-test.properties]
+19:17:53,997  INFO main PropertySourcesPlaceholderConfigurer:loadProperties:172 - Loading properties file from class path resource [datasource.properties]
+19:17:54,000  INFO main PropertySourcesPlaceholderConfigurer:loadProperties:172 - Loading properties file from class path resource [hibernate.properties]
+19:17:54,545  INFO main Version:logVersion:37 - HHH000412: Hibernate Core {5.1.0.Final}
+19:17:54,552  INFO main Environment:<clinit>:198 - HHH000205: Loaded properties from resource hibernate.properties: {//net.sf.ehcache.configurationResourceName=ehcache.xml, hibernate.cache.use_query_cache=true, hibernate.dialect=org.hibernate.dialect.MySQLDialect, hibernate.cache.use_second_level_cache=true, hibernate.format_sql=false, hibernate.id.new_generator_mappings=false, hibernate.cache.region.factory_class=org.hibernate.cache.ehcache.EhCacheRegionFactory, hibernate.hbm2ddl.auto=update, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true}
+19:17:54,554  INFO main Environment:buildBytecodeProvider:317 - HHH000021: Bytecode provider name : javassist
+19:17:54,709  INFO main Version:<clinit>:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+19:17:56,041  INFO main Dialect:<init>:156 - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+19:17:57,326  WARN main ConfigurationFactory:parseConfiguration:136 - No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/C:/Users/Svik/.m2/repository/net/sf/ehcache/ehcache-core/2.6.11/ehcache-core-2.6.11.jar!/ehcache-failsafe.xml
+19:17:57,563  INFO main UpdateTimestampsCache:<init>:55 - HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+19:17:57,568  WARN main AbstractEhcacheRegionFactory:getCache:160 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+19:17:57,695  INFO main StandardQueryCache:<init>:74 - HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+19:17:57,697  WARN main AbstractEhcacheRegionFactory:getCache:160 - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+19:17:57,792  INFO main Version:<clinit>:30 - HV000001: Hibernate Validator 5.2.3.Final
+19:17:58,174  WARN main AbstractEhcacheRegionFactory:getCache:160 - HHH020003: Could not find a specific ehcache configuration for cache named [client]; using defaults.
+19:17:58,488  WARN main AbstractEhcacheRegionFactory:getCache:160 - HHH020003: Could not find a specific ehcache configuration for cache named [payment]; using defaults.
+19:17:58,496  WARN main AbstractEhcacheRegionFactory:getCache:160 - HHH020003: Could not find a specific ehcache configuration for cache named [creditLine]; using defaults.
+19:17:58,879  WARN main ExceptionHandlerLoggedImpl:handleException:27 - GenerationTarget encountered exception accepting command : Unable to execute command [alter table PUBLIC.creditline drop constraint FKdxiw9pgf294qlmgyc5tges755]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [alter table PUBLIC.creditline drop constraint FKdxiw9pgf294qlmgyc5tges755]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:327)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:229)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:416)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:401)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1014)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:545)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1014)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:545)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1014)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:545)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:109)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:261)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:217)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:276)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:278)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:236)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:78)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:212)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: PUBLIC.CREDITLINE
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCStatement.fetchResult(Unknown Source)
+	at org.hsqldb.jdbc.JDBCStatement.execute(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingStatement.execute(DelegatingStatement.java:264)
+	at org.apache.commons.dbcp.DelegatingStatement.execute(DelegatingStatement.java:264)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 107 more
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: PUBLIC.CREDITLINE
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.SchemaManager.getUserTable(Unknown Source)
+	at org.hsqldb.ParserDDL.compileAlterTable(Unknown Source)
+	at org.hsqldb.ParserDDL.compileAlter(Unknown Source)
+	at org.hsqldb.ParserCommand.compilePart(Unknown Source)
+	at org.hsqldb.ParserCommand.compileStatements(Unknown Source)
+	at org.hsqldb.Session.executeDirectStatement(Unknown Source)
+	at org.hsqldb.Session.execute(Unknown Source)
+	... 112 more
+19:17:58,927  WARN main ExceptionHandlerLoggedImpl:handleException:27 - GenerationTarget encountered exception accepting command : Unable to execute command [alter table PUBLIC.payment drop constraint FKjuo7axvr1dkqvery62uexupp1]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Unable to execute command [alter table PUBLIC.payment drop constraint FKjuo7axvr1dkqvery62uexupp1]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:63)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:370)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:355)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:327)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:229)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:153)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:125)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:111)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:137)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:64)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:458)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:465)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:708)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:416)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:401)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1014)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:545)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1014)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:545)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1014)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:545)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:109)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:261)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:217)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:276)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:278)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:236)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:180)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:78)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:212)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: java.sql.SQLSyntaxErrorException: user lacks privilege or object not found: PUBLIC.PAYMENT
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCStatement.fetchResult(Unknown Source)
+	at org.hsqldb.jdbc.JDBCStatement.execute(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingStatement.execute(DelegatingStatement.java:264)
+	at org.apache.commons.dbcp.DelegatingStatement.execute(DelegatingStatement.java:264)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:51)
+	... 107 more
+Caused by: org.hsqldb.HsqlException: user lacks privilege or object not found: PUBLIC.PAYMENT
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.SchemaManager.getUserTable(Unknown Source)
+	at org.hsqldb.ParserDDL.compileAlterTable(Unknown Source)
+	at org.hsqldb.ParserDDL.compileAlter(Unknown Source)
+	at org.hsqldb.ParserCommand.compilePart(Unknown Source)
+	at org.hsqldb.ParserCommand.compileStatements(Unknown Source)
+	at org.hsqldb.Session.executeDirectStatement(Unknown Source)
+	at org.hsqldb.Session.execute(Unknown Source)
+	... 112 more
+19:17:58,979  INFO main SchemaCreatorImpl:applyImportSources:470 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@2819c460'
+19:17:59,599  INFO main HibernateTransactionManager:afterPropertiesSet:357 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@4cc36c19] of Hibernate SessionFactory for HibernateTransactionManager
+19:17:59,807  INFO main TransactionContext:startTransaction:101 - Began transaction (1) for test context [DefaultTestContext@32b0876c testClass = ClientDAOImplTest, testInstance = com.softserve.creditloan.dao.ClientDAOImplTest@2aaf152b, testMethod = loadClientTest@ClientDAOImplTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@53d13cd4 testClass = ClientDAOImplTest, locations = '{file:src/main/webapp/WEB-INF/database-context-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.hibernate5.HibernateTransactionManager@39bbd9e0]; rollback [true]
+19:17:59,848  INFO main QueryTranslatorFactoryInitiator:initiateService:47 - HHH000397: Using ASTQueryTranslatorFactory
+19:18:00,275  INFO main TransactionContext:endTransaction:136 - Rolled back transaction for test context [DefaultTestContext@32b0876c testClass = ClientDAOImplTest, testInstance = com.softserve.creditloan.dao.ClientDAOImplTest@2aaf152b, testMethod = loadClientTest@ClientDAOImplTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@53d13cd4 testClass = ClientDAOImplTest, locations = '{file:src/main/webapp/WEB-INF/database-context-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+19:18:00,282  INFO main TransactionContext:startTransaction:101 - Began transaction (1) for test context [DefaultTestContext@32b0876c testClass = ClientDAOImplTest, testInstance = com.softserve.creditloan.dao.ClientDAOImplTest@6ee99964, testMethod = deleteClientTest@ClientDAOImplTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@53d13cd4 testClass = ClientDAOImplTest, locations = '{file:src/main/webapp/WEB-INF/database-context-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.hibernate5.HibernateTransactionManager@39bbd9e0]; rollback [true]
+19:18:00,361  INFO main TransactionContext:endTransaction:136 - Rolled back transaction for test context [DefaultTestContext@32b0876c testClass = ClientDAOImplTest, testInstance = com.softserve.creditloan.dao.ClientDAOImplTest@6ee99964, testMethod = deleteClientTest@ClientDAOImplTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@53d13cd4 testClass = ClientDAOImplTest, locations = '{file:src/main/webapp/WEB-INF/database-context-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+19:18:00,369  INFO main TransactionContext:startTransaction:101 - Began transaction (1) for test context [DefaultTestContext@32b0876c testClass = ClientDAOImplTest, testInstance = com.softserve.creditloan.dao.ClientDAOImplTest@1ee27d73, testMethod = loadAllClientsTest@ClientDAOImplTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@53d13cd4 testClass = ClientDAOImplTest, locations = '{file:src/main/webapp/WEB-INF/database-context-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.hibernate5.HibernateTransactionManager@39bbd9e0]; rollback [true]
+19:18:00,393  INFO main TransactionContext:endTransaction:136 - Rolled back transaction for test context [DefaultTestContext@32b0876c testClass = ClientDAOImplTest, testInstance = com.softserve.creditloan.dao.ClientDAOImplTest@1ee27d73, testMethod = loadAllClientsTest@ClientDAOImplTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@53d13cd4 testClass = ClientDAOImplTest, locations = '{file:src/main/webapp/WEB-INF/database-context-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+19:18:00,399  INFO main TransactionContext:startTransaction:101 - Began transaction (1) for test context [DefaultTestContext@32b0876c testClass = ClientDAOImplTest, testInstance = com.softserve.creditloan.dao.ClientDAOImplTest@2489e84a, testMethod = isClientIdentificationNumberFreeTest@ClientDAOImplTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@53d13cd4 testClass = ClientDAOImplTest, locations = '{file:src/main/webapp/WEB-INF/database-context-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.hibernate5.HibernateTransactionManager@39bbd9e0]; rollback [true]
+19:18:00,520  INFO main TransactionContext:endTransaction:136 - Rolled back transaction for test context [DefaultTestContext@32b0876c testClass = ClientDAOImplTest, testInstance = com.softserve.creditloan.dao.ClientDAOImplTest@2489e84a, testMethod = isClientIdentificationNumberFreeTest@ClientDAOImplTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@53d13cd4 testClass = ClientDAOImplTest, locations = '{file:src/main/webapp/WEB-INF/database-context-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+19:18:00,525  INFO main TransactionContext:startTransaction:101 - Began transaction (1) for test context [DefaultTestContext@32b0876c testClass = ClientDAOImplTest, testInstance = com.softserve.creditloan.dao.ClientDAOImplTest@1192b58e, testMethod = saveOrUpdateClientTest@ClientDAOImplTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@53d13cd4 testClass = ClientDAOImplTest, locations = '{file:src/main/webapp/WEB-INF/database-context-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.hibernate5.HibernateTransactionManager@39bbd9e0]; rollback [true]
+19:18:00,539  INFO main TransactionContext:endTransaction:136 - Rolled back transaction for test context [DefaultTestContext@32b0876c testClass = ClientDAOImplTest, testInstance = com.softserve.creditloan.dao.ClientDAOImplTest@1192b58e, testMethod = saveOrUpdateClientTest@ClientDAOImplTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@53d13cd4 testClass = ClientDAOImplTest, locations = '{file:src/main/webapp/WEB-INF/database-context-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+19:18:00,560  INFO main TransactionContext:startTransaction:101 - Began transaction (1) for test context [DefaultTestContext@2f4b98f6 testClass = CreditLineDAOImplTest, testInstance = com.softserve.creditloan.dao.CreditLineDAOImplTest@421def93, testMethod = loadCreditLineTest@CreditLineDAOImplTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@345cbf40 testClass = CreditLineDAOImplTest, locations = '{file:src/main/webapp/WEB-INF/database-context-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.hibernate5.HibernateTransactionManager@39bbd9e0]; rollback [true]
+19:18:00,568  INFO main TransactionContext:endTransaction:136 - Rolled back transaction for test context [DefaultTestContext@2f4b98f6 testClass = CreditLineDAOImplTest, testInstance = com.softserve.creditloan.dao.CreditLineDAOImplTest@421def93, testMethod = loadCreditLineTest@CreditLineDAOImplTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@345cbf40 testClass = CreditLineDAOImplTest, locations = '{file:src/main/webapp/WEB-INF/database-context-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+19:18:00,575  INFO main TransactionContext:startTransaction:101 - Began transaction (1) for test context [DefaultTestContext@2f4b98f6 testClass = CreditLineDAOImplTest, testInstance = com.softserve.creditloan.dao.CreditLineDAOImplTest@f5ce0bb, testMethod = loadAllCreditLinesTest@CreditLineDAOImplTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@345cbf40 testClass = CreditLineDAOImplTest, locations = '{file:src/main/webapp/WEB-INF/database-context-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.hibernate5.HibernateTransactionManager@39bbd9e0]; rollback [true]
+19:18:00,601  INFO main TransactionContext:endTransaction:136 - Rolled back transaction for test context [DefaultTestContext@2f4b98f6 testClass = CreditLineDAOImplTest, testInstance = com.softserve.creditloan.dao.CreditLineDAOImplTest@f5ce0bb, testMethod = loadAllCreditLinesTest@CreditLineDAOImplTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@345cbf40 testClass = CreditLineDAOImplTest, locations = '{file:src/main/webapp/WEB-INF/database-context-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+19:18:00,605  INFO main TransactionContext:startTransaction:101 - Began transaction (1) for test context [DefaultTestContext@2f4b98f6 testClass = CreditLineDAOImplTest, testInstance = com.softserve.creditloan.dao.CreditLineDAOImplTest@5e8507f1, testMethod = saveCreditLineTest@CreditLineDAOImplTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@345cbf40 testClass = CreditLineDAOImplTest, locations = '{file:src/main/webapp/WEB-INF/database-context-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.hibernate5.HibernateTransactionManager@39bbd9e0]; rollback [true]
+19:18:00,613  INFO main TransactionContext:endTransaction:136 - Rolled back transaction for test context [DefaultTestContext@2f4b98f6 testClass = CreditLineDAOImplTest, testInstance = com.softserve.creditloan.dao.CreditLineDAOImplTest@5e8507f1, testMethod = saveCreditLineTest@CreditLineDAOImplTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@345cbf40 testClass = CreditLineDAOImplTest, locations = '{file:src/main/webapp/WEB-INF/database-context-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+19:18:00,650  INFO main TransactionContext:startTransaction:101 - Began transaction (1) for test context [DefaultTestContext@2a097d77 testClass = PaymentDAOImplTest, testInstance = com.softserve.creditloan.dao.PaymentDAOImplTest@53c1179a, testMethod = savePaymentTest@PaymentDAOImplTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@21eee94f testClass = PaymentDAOImplTest, locations = '{file:src/main/webapp/WEB-INF/database-context-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.hibernate5.HibernateTransactionManager@39bbd9e0]; rollback [true]
+19:18:00,654  INFO main TransactionContext:endTransaction:136 - Rolled back transaction for test context [DefaultTestContext@2a097d77 testClass = PaymentDAOImplTest, testInstance = com.softserve.creditloan.dao.PaymentDAOImplTest@53c1179a, testMethod = savePaymentTest@PaymentDAOImplTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@21eee94f testClass = PaymentDAOImplTest, locations = '{file:src/main/webapp/WEB-INF/database-context-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+19:18:00,657  INFO main TransactionContext:startTransaction:101 - Began transaction (1) for test context [DefaultTestContext@2a097d77 testClass = PaymentDAOImplTest, testInstance = com.softserve.creditloan.dao.PaymentDAOImplTest@1a47a1e8, testMethod = loadAllPaymentsTest@PaymentDAOImplTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@21eee94f testClass = PaymentDAOImplTest, locations = '{file:src/main/webapp/WEB-INF/database-context-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.hibernate5.HibernateTransactionManager@39bbd9e0]; rollback [true]
+19:18:00,697  INFO main TransactionContext:endTransaction:136 - Rolled back transaction for test context [DefaultTestContext@2a097d77 testClass = PaymentDAOImplTest, testInstance = com.softserve.creditloan.dao.PaymentDAOImplTest@1a47a1e8, testMethod = loadAllPaymentsTest@PaymentDAOImplTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@21eee94f testClass = PaymentDAOImplTest, locations = '{file:src/main/webapp/WEB-INF/database-context-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+19:18:00,770  INFO Thread-3 GenericApplicationContext:doClose:960 - Closing org.springframework.context.support.GenericApplicationContext@67a20f67: startup date [Tue Sep 13 19:17:53 EEST 2016]; root of context hierarchy
+19:18:00,871  INFO Thread-3 SchemaDropperImpl$DelayedDropActionImpl:perform:523 - HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'

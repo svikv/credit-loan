@@ -18,7 +18,7 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "payment")
-@Cache(usage = CacheConcurrencyStrategy.READ_WRITE, region = "creditLine")
+@Cache(usage = CacheConcurrencyStrategy.READ_WRITE, region = "payment")
 public class Payment implements Serializable {
 
     private static final long serialVersionUID = -4609449949072647059L;

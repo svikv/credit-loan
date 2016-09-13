@@ -12,11 +12,9 @@
   <div class="col-md-12">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3><spring:message code="client.list.client" /></h3>
+        <h3>Client</h3>
         <div class="row">
-          <button type="button" class="btn btn-success" onclick="location.href='<c:url value="/clients/private_persons/create"/>'">
-            <spring:message code="client.list.create" />
-          </button>
+          <button type="button" class="btn btn-success" onclick="location.href='<c:url value="/clients/private_persons/create"/>'">Create</button>
         </div>
         </button>
       </div>
@@ -24,15 +22,15 @@
         <div class="table-responsive">
           <table class="table table-hover table-bordered table-striped" id="clientTable">
             <thead>
-              <tr>
-                <th class="col-md-2"><spring:message code="client.list.th1" /></th>
-                <th class="col-md-2"><spring:message code="client.list.th2" /></th>
-                <th class="col-md-2"><spring:message code="client.list.th3" /></th>
-                <th class="col-md-2"><spring:message code="client.list.th4" /></th>
-                <th class="col-md-2"><spring:message code="client.list.th5" /></th>
-                <th class="col-md-1"><spring:message code="client.list.th6" /></th>
-                <th class="col-md-1"><spring:message code="client.list.th7" /></th>
-              </tr>
+            <tr>
+              <th class="col-md-2">First Name</th>
+              <th class="col-md-2">Last Name</th>
+              <th class="col-md-2">Identification Number</th>
+              <th class="col-md-2">Phone</th>
+              <th class="col-md-2">Email</th>
+              <th class="col-md-1">Credit lines</th>
+              <th class="col-md-1">Delete</th>
+            </tr>
             </thead>
 
             <tbody>
