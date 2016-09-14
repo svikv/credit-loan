@@ -7,6 +7,9 @@
                             http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
                             http://www.springframework.org/schema/tx  http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
 
+  <context:property-placeholder location="classpath:datasource.properties"/>
+  <context:component-scan base-package="com.softserve.creditloan" />
+
   <!--Using Apache Commons DBCP for a data source with connection pooling capability:-->
   <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
     <property name="driverClassName" value="${jdbc.driverClassName}" />
@@ -14,35 +17,5 @@
     <property name="username" value="${jdbc.username}" />
     <property name="password" value="${jdbc.password}" />
     <property name="defaultAutoCommit" value="${jdbc.defaultAutoCommit}" />
-  </bean>
-
-  <context:property-placeholder location="classpath:datasource.properties, classpath:hibernate.properties"/>
-  <context:component-scan base-package="com.softserve.creditloan" />
-
-  <!-- Hibernate SessionFactory -->
-  <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
-    <property name="dataSource" ref="dataSource" />
-    <property name="packagesToScan" value="com.softserve.creditloan.model" />
-    <property name="hibernateProperties">
-      <props>
-        <prop key="hibernate.dialect">${hibernate.dialect}</prop>
-        <prop key="hibernate.hbm2ddl.auto">${hibernate.hbm2ddl.auto}</prop>
-        <prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
-        <prop key="hibernate.format_sql">${hibernate.format_sql}</prop>
-        <prop key="hibernate.id.new_generator_mappings">${hibernate.id.new_generator_mappings}</prop>
-        <!-- Enable second level cache and query cache -->
-        <prop key="hibernate.cache.use_second_level_cache">${hibernate.cache.use_second_level_cache}</prop>
-        <prop key="hibernate.cache.region.factory_class">${hibernate.cache.region.factory_class}</prop>
-        <prop key="hibernate.cache.use_query_cache">${hibernate.cache.use_query_cache}</prop>
-        <prop key="net.sf.ehcache.configurationResourceName">${net.sf.ehcache.configurationResourceName}</prop>
-      </props>
-    </property>
-  </bean>
-  <!--You should move all your resource files to a directory like WEB-INF/resources so that it becomes easier to reference it under classpath-->
-  <!--Ehcache looks for a file called ehcache.xml in the top level of the classpath-->
-
-  <tx:annotation-driven />
-  <bean id="transactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
-    <property name="sessionFactory" ref="sessionFactory" />
   </bean>
 </beans>

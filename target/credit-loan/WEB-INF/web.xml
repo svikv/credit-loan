@@ -31,6 +31,7 @@
             /WEB-INF/root-context.xml
             /WEB-INF/database-context.xml
             /WEB-INF/security-context.xml
+            /WEB-INF/hibernate-context.xml
         </param-value>
     </context-param>
 

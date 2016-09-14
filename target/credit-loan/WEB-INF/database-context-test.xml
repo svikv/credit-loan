@@ -8,9 +8,9 @@
                             http://www.springframework.org/schema/tx  http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
 
 
-    <context:property-placeholder location="classpath:hibernate.properties, classpath:app.properties,
-     classpath:hibernate-test.properties, classpath:datasource-test.properties" />
+    <context:property-placeholder location="classpath:app.properties, classpath:hibernate-test.properties, classpath:datasource-test.properties" />
     <import resource="database-context.xml"/>
+    <import resource="hibernate-context.xml"/>
 
     <!--Overriding the regular datasource with in-memory datasource implementation for unit testing DAO layer-->
   <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">

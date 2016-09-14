@@ -22,7 +22,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "client")
-@Cache(usage = CacheConcurrencyStrategy.READ_WRITE, region = "client")
+@Cache(usage = CacheConcurrencyStrategy.READ_WRITE, region = "creditLine")
 public class Client implements Serializable {
 
     private static final long serialVersionUID = 7496968901112896693L;
